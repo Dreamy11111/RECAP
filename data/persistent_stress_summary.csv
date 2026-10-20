@@ -1,0 +1,5 @@
+Stress family,Sustained disturbance window,Full Hybrid success,Rule-Based Semantic success,w/o CARE success,Main failure signature
+Burst packet loss,Loss rate elevated by 20 points for 80 steps,0.9159816717279248,0.8567031686297849,0.5914858961531423,Repeated fallback bursts and growing stale-neighbor duration
+Correlated delay inflation,Mean one-hop delay increased by 80 ms for 100 steps,0.8842651498148717,0.8101499609362093,0.5717413271224839,Disagreement oscillation and delayed mission-consensus repair
+Temporary partition,One subteam isolated for 12 steps before recovery,0.8289604323884112,0.7641336455189126,0.5119464480043587,Sharp residual spike at reconnection and conservative replanning wave
+Multi-event overlap,"Priority switch, no-fly update, and link degradation within 15 steps",0.7881584150096647,0.7242655248640337,0.47184703334178135,Validator rejection burst followed by progress stall and slack erosion

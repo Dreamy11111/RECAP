@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Persistent-Stress Closed-Loop Results Under Shared Disturbance Windows}
+\label{tab:persistent_stress}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\linewidth} >{\raggedright\arraybackslash}p{0.19\linewidth} >{\centering\arraybackslash}p{0.12\linewidth} >{\centering\arraybackslash}p{0.12\linewidth} >{\centering\arraybackslash}p{0.12\linewidth} >{\raggedright\arraybackslash}p{0.17\linewidth}}
+\toprule
+Stress family & Sustained disturbance window & Full Hybrid success & Rule-Based Semantic success & Without \recoveryengine{} success & Main failure signature \\ 
+\midrule
+Burst packet loss & Loss rate elevated by 20 points for 80 steps & 91.6\% & 85.7\% & 59.1\% & Repeated fallback bursts and growing stale-neighbor duration \\
+Correlated delay inflation & Mean one-hop delay increased by 80 ms for 100 steps & 88.4\% & 81.0\% & 57.2\% & Disagreement oscillation and delayed mission-consensus repair \\
+Temporary partition & One subteam isolated for 12 steps before recovery & 82.9\% & 76.4\% & 51.2\% & Sharp residual spike at reconnection and conservative replanning wave \\
+Multi-event overlap & Priority switch, no-fly update, and link degradation within 15 steps & 78.8\% & 72.4\% & 47.2\% & Validator rejection burst followed by progress stall and slack erosion \\
+\bottomrule
+\end{tabular}
+\end{table*}

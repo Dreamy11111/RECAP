@@ -1,0 +1,10 @@
+{
+  "reliably_superior_loss_below": 0.25,
+  "reliably_superior_delay_below_ms": 150,
+  "reliably_superior_partition_below_steps": 12,
+  "reliably_superior_overlap_below": 2,
+  "steep_degradation_loss_at_or_above": 0.35,
+  "steep_degradation_delay_at_or_above_ms": 180,
+  "steep_degradation_partition_at_or_above_steps": 15,
+  "steep_degradation_overlap_at_or_above": 3
+}

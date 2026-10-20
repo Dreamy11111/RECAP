@@ -1,0 +1,7 @@
+{
+  "full_loop_rows": 3,
+  "runtime_rows": 8,
+  "persistent_stress_rows": 4,
+  "failure_boundary_rows": 540,
+  "artifacts_dir": "data"
+}

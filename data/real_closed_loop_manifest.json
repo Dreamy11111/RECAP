@@ -1,0 +1,13 @@
+{
+  "summary_rows": 72,
+  "injection_rows": 180,
+  "representative_logs": [
+    "real_closed_loop_full_hybrid_3a.csv",
+    "real_closed_loop_full_hybrid_5a.csv",
+    "real_closed_loop_rule-based_semantic_3a.csv",
+    "real_closed_loop_rule-based_semantic_5a.csv",
+    "real_closed_loop_summary.csv",
+    "real_closed_loop_w_o_care_3a.csv",
+    "real_closed_loop_w_o_care_5a.csv"
+  ]
+}

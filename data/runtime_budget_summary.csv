@@ -1,0 +1,9 @@
+Component,Trigger cadence,Mean time,p95 time,Role,Budget share
+Communication-state update,Every step,8.285212094234737,9.064434712804417,"Packet-loss, delay, and AoI estimation",0.08285212094234737
+\recoveryengine{} belief repair,Every step if stale,14.650199861413794,15.901303594398094,Repaired neighbor belief and trust update,0.14650199861413793
+Validator screening,On every semantic proposal,5.194760677383408,5.576536171031701,"Accept, project, reuse, or reject candidate priors",0.051947606773834074
+\semanticengine{} proposal generation,Event-triggered,18.886124618634113,20.41986227778856,Structured mission-prior proposal under ambiguity,0.18886124618634115
+Local convexified planner,Every step,37.143827477022164,38.63649948856708,Horizon-$H$ solve and first-action extraction,0.3714382747702216
+Distributed coordination update,Every step,9.007668787798911,9.675670599096112,"Shared-variable, residual, and dual update",0.09007668787798911
+Logging and diagnostics,Every step,3.1053690159977463,3.5930912397727117,Runtime trace capture for all compared methods,0.031053690159977464
+Total closed-loop step time,Mixed,80.05834958741809,97.72617101495484,Leaves a narrow but nonzero slack margin inside the control period,0.8005834958741809

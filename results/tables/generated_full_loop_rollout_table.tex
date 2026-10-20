@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Full-Loop Long-Horizon Rollout Over $K=600$ Steps With Repeated Mission Events}
+\label{tab:full_loop_rollout}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.21\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth}}
+\toprule
+Method & Final mission completion & Mean disagreement residual & Mean information age & Fallback invocations & Validator reject rate & Minimum separation \\ 
+\midrule
+Full Hybrid & 94.8\% & 0.050 & 7.4 steps & 5 & 8.6\% & 12.2 m \\
+Rule-Based Semantic & 92.0\% & 0.054 & 8.4 steps & 9 & 11.2\% & 12.2 m \\
+Without CARE & 78.6\% & 0.316 & 8.9 steps & 14 & 9.4\% & 11.4 m \\
+\bottomrule
+\end{tabular}
+\end{table*}

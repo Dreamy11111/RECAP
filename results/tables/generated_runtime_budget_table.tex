@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Representative Runtime Budget for the Full-Loop Rollout Under a 100 ms Control Period}
+\label{tab:runtime_budget}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.24\linewidth} >{\centering\arraybackslash}p{0.10\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\centering\arraybackslash}p{0.11\linewidth} >{\raggedright\arraybackslash}p{0.25\linewidth}}
+\toprule
+Component & Trigger cadence & Mean time & p95 time & Budget share & Role in loop \\ 
+\midrule
+Communication-state update & Every step & 8.3 ms & 9.1 ms & 8.3\% & Packet-loss, delay, and AoI estimation \\
+\recoveryengine{} belief repair & Every step if stale & 14.7 ms & 15.9 ms & 14.7\% & Repaired neighbor belief and trust update \\
+Validator screening & On every semantic proposal & 5.2 ms & 5.6 ms & 5.2\% & Accept, project, reuse, or reject candidate priors \\
+\semanticengine{} proposal generation & Event-triggered & 18.9 ms & 20.4 ms & 18.9\% & Structured mission-prior proposal under ambiguity \\
+Local convexified planner & Every step & 37.1 ms & 38.6 ms & 37.1\% & Horizon-$H$ solve and first-action extraction \\
+Distributed coordination update & Every step & 9.0 ms & 9.7 ms & 9.0\% & Shared-variable, residual, and dual update \\
+Logging and diagnostics & Every step & 3.1 ms & 3.6 ms & 3.1\% & Runtime trace capture for all compared methods \\
+Total closed-loop step time & Mixed & 80.1 ms & 97.7 ms & 80.1\% & Leaves a narrow but nonzero slack margin inside the control period \\
+\bottomrule
+\end{tabular}
+\end{table*}

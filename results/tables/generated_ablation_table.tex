@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Main Closed-Loop Ablation Results Aggregated Over the Shared-Trace Stress Suite}
+\label{tab:main_ablation_results}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.20\linewidth} >{\centering\arraybackslash}p{0.14\linewidth} >{\centering\arraybackslash}p{0.14\linewidth} >{\centering\arraybackslash}p{0.14\linewidth} >{\centering\arraybackslash}p{0.14\linewidth} >{\centering\arraybackslash}p{0.14\linewidth}}
+\toprule
+Method & Mission success (\%) $\uparrow$ & Normalized energy $\downarrow$ & Min. separation (m) $\uparrow$ & Disagreement $\downarrow$ & Fallback rate (\%) $\downarrow$ \\
+\midrule
+Full Hybrid & 91.7 $\pm$ 3.3 & 1.33 $\pm$ 0.08 & 12.70 $\pm$ 0.48 & 0.90 $\pm$ 0.08 & 18.2 $\pm$ 2.3 \\
+w/o \semanticengine{} & 86.6 $\pm$ 3.3 & 1.41 $\pm$ 0.09 & 12.50 $\pm$ 0.47 & 1.00 $\pm$ 0.10 & 18.7 $\pm$ 2.4 \\
+w/o \recoveryengine{} & 86.8 $\pm$ 3.2 & 1.48 $\pm$ 0.09 & 12.18 $\pm$ 0.46 & 1.10 $\pm$ 0.11 & 25.1 $\pm$ 3.3 \\
+Weak-Gate Surrogate & 87.9 $\pm$ 3.4 & 1.40 $\pm$ 0.09 & 12.43 $\pm$ 0.47 & 1.04 $\pm$ 0.10 & 24.7 $\pm$ 3.2 \\
+Rule-Based Semantic & 87.3 $\pm$ 3.3 & 1.38 $\pm$ 0.09 & 12.49 $\pm$ 0.47 & 0.98 $\pm$ 0.10 & 19.9 $\pm$ 2.5 \\
+\bottomrule
+\end{tabular}
+\end{table*}
